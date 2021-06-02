@@ -20,6 +20,8 @@ public class Main {
         Jugador j1 = new Jugador();
         Jugador j2 = new Jugador();
 
+        System.out.println("Esta es una version simplificada de scrabble, lee el manual antes de empezar a jugar\n");
+
         System.out.println("* Jugador 1, inserte su nombre: ");
         j1.setNombre(in.next());
         System.out.println("* " + j1.getNombre() + ", inserte las letras de su mano (solo 7): ");
@@ -55,9 +57,9 @@ public class Main {
 
         }while(j1.getPuntos() < 15 || j2.getPuntos() < 15);
 
-        if(j1.getPuntos() >= 15){
+        if(j1.getPuntos() >= j2.getPuntos()){
             System.out.println(j1.getNombre() + " ,eres el ganador!! puntos: " + j1.getPuntos());
-        }else if(j2.getPuntos() >= 15){
+        }else if(j2.getPuntos() >= j1.getPuntos()){
             System.out.println(j2.getNombre() + " ,eres el ganador!! puntos: " + j2.getPuntos());
         }
 
