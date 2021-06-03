@@ -26,5 +26,5 @@ public class CombinarLetras {
             outstr.deleteCharAt(outstr.length() - 1);
         }
         return posiblesPalabras;
-    } 
+    } //Código y algoritmo adaptado de http://www.mytechinterviews.com/combinations-of-a-string
 }
